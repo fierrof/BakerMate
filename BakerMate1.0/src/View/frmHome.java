@@ -11,7 +11,6 @@ public class frmHome extends javax.swing.JFrame {
     private ViewManager vm = new ViewManager();
     private DBManager dbm = new DBManager();
     SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
-    frmLogin fLogin;
 
     public frmHome() {
         initComponents();
@@ -19,7 +18,6 @@ public class frmHome extends javax.swing.JFrame {
         setTables();
         setCombos();
         setEstadisticas();
-        lblUsuario.setText(fLogin.rs.getString("nombre"));
 
     }
 
